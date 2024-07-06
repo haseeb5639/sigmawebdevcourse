@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        div{
+            /* background-color: red; */
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+        /* Descendant Selector */
+        div p {
+            background-color: yellow;
+            color: green;
+        }
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        } 
+        /* Psuedo Selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: brown;
+        }
+        a:active{
+            color: blue;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        i am a div
+        <p>I am a paragraph inside a div</p>
+        <article>
+            <p>This is a paragraph inside div and then inside article</p>
+        </article>
+    </div>
+    <div id="green">
+        i am a div too
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.facebook.com">Go to Facebook</a>
+    </div>
+</body>
+</html>
