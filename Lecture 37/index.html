@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .topnav {
+            background-color: green;
+            width: 100vw;
+            height: 50px;
+            position: fixed;
+            border: 2px solid black;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .bottomnav {
+            background-color: green;
+            width: 100vw;
+            height: 100px;
+            /* position: fixed; */
+            border: 2px solid black;
+            z-index: 1000;
+        }
+
+        /* .mainboxparent {
+            border: 2px solid black;
+            padding: 30px;
+        } */
+
+        .boxesbg {
+            width: calc(100vw - 40px);
+            height: 700px;
+            background-color: aqua;
+            display: flex;
+            border: 2px solid black;
+            margin: 20px auto 0 auto;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 50px;
+            left: 35px;
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+        .box2 {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 50px;
+            left: 800px;
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+        .servicesbanner {
+            border: 2px solid black;
+            width: calc(100vw - 500px);
+            margin: 30px auto 30px auto;
+            height: 300px;
+            background-color: aqua;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .servicesbanner p {
+            margin-top: 35px;
+            font-size: 30px;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+        </nav>
+        <section>
+            <div class="mainboxparent">
+            </div>
+            <div class="boxesbg">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
+            <div class="servicesbanner">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, numquam ullam atque fugit error illum. Nobis eum rerum, ducimus cum nostrum saepe soluta tenetur a est in repudiandae! Ducimus assumenda molestias accusantium voluptatem magnam error reiciendis dolores laboriosam? Voluptate, alias sed id perferendis fuga laboriosam molestias necessitatibus earum suscipit architecto? Velit nostrum ad dolores quibusdam totam non soluta voluptates voluptas voluptatibus harum sed facere minima quas rerum fugit vero dolor, consequuntur nulla explicabo error quam. Tempore fugiat nemo itaque, ex doloremque vitae voluptatibus architecto? Neque magni minus sunt cumque adipisci optio debitis earum? Modi aut ipsa, facere quasi beatae nesciunt.</p>
+            </div>
+        </section>
+    </header>
+    <footer>
+        <nav class="bottomnav">
+        </nav>
+    </footer>
+</body>
+
+</html>
