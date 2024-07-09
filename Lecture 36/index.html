@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Navbar</title>
+    <style>
+        :root {
+            --navprimarycolor : blue;
+            --primarytextcolor : white;
+            --primarybodycolor : lightblue;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--primarybodycolor);
+        }
+        ul {
+            /* border: 2px solid black; */
+            display: flex;
+            background-color: var(--navprimarycolor);
+        }
+        ul li {
+            /* border: 2px solid black; */
+            list-style: none;
+            padding: 15px 15px 15px 15px;
+            color: var(--primarytextcolor);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Plans</li>
+                <li>Branch Locator</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
