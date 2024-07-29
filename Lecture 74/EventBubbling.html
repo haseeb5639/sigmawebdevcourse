@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+        }
+        .childContainer {
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+        .container {
+            background-color: yellow;
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click" , (e) => {
+            alert("Child was clicked");
+            e.stopPropagation();
+        })
+        document.querySelector(".childContainer").addEventListener("click" , () => {
+            alert("Child Container was clicked");
+            e.stopPropagation();
+        })
+        document.querySelector(".container").addEventListener("click" , () => {
+            alert("Container was clicked");
+        })
+
+        setInterval(() => {
+            console.log("Event fired after 3 seconds");
+        }, 3000);
+
+        setTimeout(() => {
+            console.log("Event fired after 1 second for only 1 time");
+        }, 1000);
+    </script>
+</body>
+</html>
