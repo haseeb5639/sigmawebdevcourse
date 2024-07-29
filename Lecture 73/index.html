@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .card {
+            width: 640px;
+            height: 106px;
+            background-color: rgb(238, 238, 237);
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image img {
+            border-radius: 8px;
+        }
+
+        .durationlabel {
+            width: 38.47px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 4px;
+            position: absolute;
+            top: 80px;
+            left: 130px;
+        }
+
+        .Duration-Text {
+            color: white;
+
+            font-size: 12px;
+            padding: 4px;
+        }
+
+        .title {
+            font-size: 16px;
+            width: 472px;
+            height: 44px;
+            position: absolute;
+            top: 8px;
+            left: 180px;
+        }
+
+        .stats {
+            width: 472px;
+            height: 18px;
+            /* border: 0.1px solid black; */
+            position: absolute;
+            top: 70px;
+            left: 180px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .stats :nth-child(1),
+        .stats :nth-child(3),
+        .stats :nth-child(5) {
+            font-size: 12px;
+            color: #606060;
+        }
+
+        .stats :nth-child(2),
+        .stats :nth-child(4) {
+            font-size: 12px;
+            color: #606060;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ"
+                    alt="">
+                <div class="durationlabel">
+                    <span class="Duration-Text">31:39</span>
+                </div>
+            </div>
+            <div class="title">
+                Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1
+            </div>
+            <div class="stats">
+                <span>Code With Harry</span>
+                <span> • </span>
+                <span>2.2M Views</span>
+                <span> • </span>
+                <span>10 Months Ago</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
