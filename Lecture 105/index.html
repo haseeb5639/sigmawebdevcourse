@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">I am box 1</div>
+    <div class="box2">I am box 2</div>
+    <div class="box3">I am box 3</div>
+    <button>Click me</button>
+    <script>
+        setTimeout(() => {
+            document.querySelector(".box1").innerHTML = "Hey"
+        }, 1000);
+        setTimeout(() => {
+            document.querySelector(".box2").innerHTML = "Hi"
+        }, 2000);
+        setTimeout(() => {
+            document.querySelector(".box3").innerHTML = "Hello"
+        }, 3000);
+    </script>
+</body>
+
+</html>
