@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.wheel-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    flex: 1;
+    text-align: center;
+    margin-left: 20px;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+canvas {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+#wheelCanvas {
+    border: none;      
+    outline: none;    
+    display: block;    
+    margin: 0 auto;
+}
